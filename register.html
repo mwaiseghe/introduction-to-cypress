@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3k constructions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="header" id="navbar">
+        <!-- A FUNCTION IN MAIN.JS FILE is used to insert the header here -->
+    </div>
+    <div class="flex justify-center flex-wrap items-center gap-8 w-[100vw] h-[90vh] bg-amber-700 ">
+        <div class="w-[50vw] text-center text-[50px] text-[white]" >
+
+            <h1 class="text-blue-400">Already have an account?</h1>
+
+
+            <a href="login.html" data-cy="login" class="text-[20px] px-4 py-2 bg-amber-600 shadow-2xl" >LOGIN</a>
+        </div>
+        <div>
+            <div class="w-full max-w-xs">
+                <form class="registration-form bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+
+                  <p class="regError bg-red-100 text-center"></p>
+                  
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                      Full Names
+                    </label>
+                    <input class="txtfullname shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Full name">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                      Email
+                    </label>
+                    <input class="txtemail shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="profile">
+                      Profile
+                    </label>
+                    <input class="txtprofile shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="profile" type="file">
+                  </div>
+                  <div class="mb-6">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                      Password
+                    </label>
+                    <input class="txtpassword shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <button class="btnregister bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                      Sign Up
+                    </button>
+                    <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                      Forgot Password?
+                    </a>
+                  </div>
+                </form>
+                
+              </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
