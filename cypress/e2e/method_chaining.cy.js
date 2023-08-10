@@ -1,8 +1,14 @@
 /// <reference types="cypress" />
 
 describe('Method Chaining', () => {
+
+    beforeEach(() => {
+        cy.visit("/login.html");
+    });
+
+
     it("Uses aliases and variables to chain methods", () => {
-        cy.visit("http://127.0.0.1:5500/login.html");
+        cy.visit("/login.html");
 
         cy.get('#username').type('testuser@gmail.com');
         cy.get('#password').type('testuser');
@@ -11,7 +17,7 @@ describe('Method Chaining', () => {
     });
 
     it("uses the .then() method to chain methods", () => {
-        cy.visit("http://127.0.0.1:5500/login.html");
+        cy.visit("/login.html");
 
         cy.get('#username').type('testuser@gmail.com');
         cy.get('#password').type('testuser');

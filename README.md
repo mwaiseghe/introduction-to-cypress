@@ -151,6 +151,8 @@ Selenium is a browser automation tool that requires Selenium Server to be setup 
 
 #### Testing Page Navigation
 
+- To get the current URL
+
 - `cy.visit` - is used to visit a specific URL
 
     ```jsx
@@ -169,3 +171,5 @@ Selenium is a browser automation tool that requires Selenium Server to be setup 
     cy.go('back')
     cy.go('forward')
     ```
+
+#### The global configuration file
